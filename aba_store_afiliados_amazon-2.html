@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aba'store: recomendaciones y productos útiles de hogar, tecnología, accesorios y vida diaria.">
+  <title>Buenas Compras | Recomendaciones útiles</title>
+  <style>
+    :root{--ink:#172033;--muted:#657084;--brand:#155eef;--brand2:#0f3fa8;--paper:#f5f7fb;--card:#fff;--line:#e5eaf2;--accent:#ffcf5a}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+    a{color:inherit}
+    .notice{background:#fff4d6;color:#674d00;text-align:center;padding:9px 16px;font-size:.88rem}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+    .nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .logo{font-weight:850;font-size:1.25rem;letter-spacing:-.04em}.logo span{color:var(--brand)}
+    nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.94rem}nav a{text-decoration:none;color:var(--muted)}
+    .hero{max-width:1100px;margin:auto;padding:54px 20px 38px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+    .eyebrow{font-weight:750;color:var(--brand);text-transform:uppercase;font-size:.78rem;letter-spacing:.1em}
+    h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.04;letter-spacing:-.055em;margin:12px 0 18px}
+    .hero p{font-size:1.08rem;color:var(--muted);max-width:620px}
+    .hero-art{background:linear-gradient(135deg,#dce8ff,#fff0c2);border-radius:28px;padding:24px;min-height:240px;display:grid;place-items:center}
+    .hero-art .emoji{font-size:6rem;filter:drop-shadow(0 12px 8px #17203320)}
+    .button{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:12px 18px;border-radius:12px;font-weight:750;margin-top:10px}
+    .button:hover{background:var(--brand2)}
+    section{max-width:1100px;margin:auto;padding:26px 20px 42px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:20px}
+    h2{font-size:1.7rem;letter-spacing:-.035em;margin:0}.section-head p{margin:0;color:var(--muted);max-width:480px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 5px 18px #18284a08}
+    .product-visual{height:150px;display:grid;place-items:center;font-size:3.7rem;background:linear-gradient(135deg,#edf2ff,#f8faff)}
+    .card-body{padding:18px}.tag{display:inline-block;background:#eaf1ff;color:#1749ad;padding:4px 9px;border-radius:99px;font-size:.75rem;font-weight:750}
+    h3{font-size:1.1rem;line-height:1.25;margin:12px 0 8px}.card p{font-size:.92rem;color:var(--muted);margin:0 0 12px}
+    .text-link{color:var(--brand);font-weight:750;text-decoration:none}
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .how article{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+    .num{width:34px;height:34px;border-radius:10px;background:#eaf1ff;color:var(--brand);display:grid;place-items:center;font-weight:850}
+    .disclosure{background:#fff;border:1px solid var(--line);padding:20px;border-radius:16px;color:var(--muted);font-size:.9rem}
+    footer{background:#111a2e;color:#dbe3f4;padding:30px 20px;margin-top:10px}
+    .foot{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    footer a{color:#fff}footer small{color:#aab6cd}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:38px}.hero-art{min-height:160px}.hero-art .emoji{font-size:4.5rem}.grid,.how{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:8px}.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}}
+  </style>
+</head>
+<body>
+  <div class="notice">Aviso: algunos enlaces pueden ser enlaces de afiliado. Podríamos recibir una comisión por compras que cumplan los requisitos, sin costo adicional para ti.</div>
+  <header>
+    <div class="nav">
+      <div class="logo">Aba&#39;<span>store</span></div>
+      <nav aria-label="Navegación principal">
+        <a href="#recomendados">Recomendados</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#sobre">Cómo funciona</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Compra con más información</div>
+        <h1>Encuentra productos que te hagan la vida más fácil.</h1>
+        <p>Ideas prácticas, recomendaciones y guías sencillas para elegir artículos útiles para tu casa, tecnología y día a día.</p>
+        <a class="button" href="#recomendados">Ver recomendaciones ↓</a>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de compras"><div class="emoji">🛍️📦</div></div>
+    </div>
+
+    <section id="recomendados">
+      <div class="section-head">
+        <h2>Recomendaciones para empezar</h2>
+        <p>Estos son ejemplos de secciones. Sustituye cada botón por tu enlace especial de Amazon antes de publicar.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="product-visual">🎧</div>
+          <div class="card-body">
+            <span class="tag">Tecnología</span>
+            <h3>Audífonos para todos los días</h3>
+            <p>Compara comodidad, duración de batería, calidad de sonido y compatibilidad antes de elegir.</p>
+            <a class="text-link affiliate-link" href="https://www.amazon.com/" target="_blank" rel="sponsored nofollow noopener">Ver opciones en Amazon ↗</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="product-visual">🏠</div>
+          <div class="card-body">
+            <span class="tag">Hogar</span>
+            <h3>Accesorios prácticos para el hogar</h3>
+            <p>Busca artículos que ahorren espacio, sean fáciles de limpiar y resuelvan una necesidad concreta.</p>
+            <a class="text-link affiliate-link" href="https://www.amazon.com/" target="_blank" rel="sponsored nofollow noopener">Ver opciones en Amazon ↗</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="product-visual">🔌</div>
+          <div class="card-body">
+            <span class="tag">Accesorios</span>
+            <h3>Cargadores y accesorios móviles</h3>
+            <p>Verifica la compatibilidad con tu dispositivo, la potencia y las certificaciones de seguridad.</p>
+            <a class="text-link affiliate-link" href="https://www.amazon.com/" target="_blank" rel="sponsored nofollow noopener">Ver opciones en Amazon ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="categorias">
+      <div class="section-head">
+        <h2>Explora por categoría</h2>
+        <p>Publica contenido original con consejos útiles, comparaciones y criterios de compra.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="card-body"><div class="product-visual">🍳</div><h3>Cocina y hogar</h3><p>Utensilios, organización y artículos de uso diario.</p></div></article>
+        <article class="card"><div class="card-body"><div class="product-visual">📱</div><h3>Tecnología económica</h3><p>Accesorios para teléfonos, computadoras y entretenimiento.</p></div></article>
+        <article class="card"><div class="card-body"><div class="product-visual">🚗</div><h3>Auto y viajes</h3><p>Organizadores y accesorios útiles para desplazamientos.</p></div></article>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="section-head"><h2>Cómo funciona</h2></div>
+      <div class="how">
+        <article><div class="num">1</div><h3>Investiga</h3><p>Elige productos que conozcas o hayas investigado y escribe recomendaciones honestas.</p></article>
+        <article><div class="num">2</div><h3>Comparte</h3><p>Coloca tus enlaces especiales de afiliado y comparte las guías en tus canales permitidos.</p></article>
+        <article><div class="num">3</div><h3>Aprende y mejora</h3><p>Revisa las visitas y compras reportadas en tu cuenta para mejorar el contenido.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="disclosure">
+        <strong>Transparencia sobre afiliados</strong><br>
+        Como asociado de Amazon, puedo obtener ingresos por compras que cumplan los requisitos. As an Amazon Associate I earn from qualifying purchases. Los precios y la disponibilidad pueden cambiar; consulta la información vigente en Amazon antes de comprar.
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="foot">
+      <div><strong>Aba'store</strong><br><small>Tu vitrina digital de productos variados.</small></div>
+      <div><a href="#sobre">Acerca de</a> · <a href="#recomendados">Recomendaciones</a></div>
+      <small>© <span id="year">2026</span> Aba'store. Sitio independiente; no afiliado oficialmente a Amazon.</small>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
